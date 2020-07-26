@@ -20,7 +20,6 @@ class Main extends PluginBase implements Listener{
     {
         $this->getServer()->getPluginManager()->registerEvents($this , $this);
         try {
-            $this->econ = EconomyAPI::getInstance();
             if ($this->getServer()->getPluginManager()->getPlugin("EconomyAPI") == null) {
                 throw new Exception("Economy API Was Not Found In This Server!");
             }
